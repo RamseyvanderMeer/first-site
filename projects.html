@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Ramsey van der Meer</br> Phtotography - Projects - Info </title>
+<meta charset="UTF-8">
+<!--<head><link rel='icon' href='favicon.ico' type='image/x-icon'/ ></head>-->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/chrome-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Raleway", sans-serif
+  }
+
+  .third img {
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .third img:hover {
+    opacity: 1
+  }
+</style>
+
+<body class="light-grey content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="sidebar bar-block white animate-left text-grey collapse top center"
+    style="z-index:3;width:300px;font-weight:bold" id="Sidebar"><br>
+    <h3 class="padding-64 center"><b>Ramsey<br>van der Meer</b></h3>
+    <a href="javascript:void(0)" onclick="on_close()" class="bar-item button padding hide-large">CLOSE</a>
+    <a href="index.html" onclick="on_close()" class="bar-item button">Phtotography</a>
+    <a href="gear.html" onclick="on_close()" class="bar-item button">Gear</a>
+    <a href="#" onclick="on_close()" class="bar-item button">Projects</a>
+    <a href="about.html" onclick="on_close()" class="bar-item button">about</a>
+
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="container top hide-large white xlarge padding-16">
+    <span class="left padding">Ramsey van der Meer</span>
+    <a href="javascript:void(0)" class="right button white" onclick="on_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="overlay hide-large animate-opacity" onclick="on_close()" style="cursor:pointer" title="close side menu"
+    id="Overlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="hide-large" style="margin-top:83px"></div>
+
+    <div class="row">
+
+      <div class="third margin-top left-padding">
+        <div class="card top-padding margin-bottom">
+          <img src="proj/lidar.jpg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Lidar project for 2019 Science Fair</b></h4>
+            <p>Lidar mapping using Lidar lite v3 module from Garmin. It can produce a map with accuracy of + or - 3cm.
+              The SMSF is on March 5 at the San Mateo events center. feel free to attend.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/tictactoe.png" alt="Avatar" style="width:40%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Minimax</b></h4>
+            <p>Made a bot to play tic tac toe which is unbeatable by using a minimax algorithm. This uses a decision
+              tree which traces all possible outcomes. From here it will score each and select the best. To do this it
+              predicts what is best for itself and plays against what is best for the player. After it reports the best
+              score based on if it thinks it will lose or win.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/chatbot.png" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Chatbot using machine Learning</b></h4>
+            <p>Trained a Chatbot through 1000 epochs with an intent understanding using a neural net composed of inputs
+              all connected to two rows of 8 predictive nodes which finally connect to an output node with the
+              probabilities of the top 5 answers. from there I choose the top one if it meets a threshold and reject if
+              it does not.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/pc.jpg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Building a PC</b></h4>
+            <p>
+              Computer Specs: <br>
+              1) Gigabyte Windforce 2070 <br>
+              2) Intel i7 8700k <br>
+              3) Asus Prime Z370-A ATX <br>
+              4) Corsair Vengeance RGB Pro 16gb <br>
+              5) EVGA Supernova G2 650w <br>
+              6) Western Digital 512gb M.2 NVMe drive <br>
+              7) Scythe Mugen 5 <br>
+              8) Fractal Meshify C <br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="third margin-top left-padding">
+        <div class="card top-padding margin-bottom">
+          <img src="proj/face.jpeg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Facial Recognition</b></h4>
+            <p>Created a facial recognition python package leveraging Faiss, an algorithm made by Facebook. This used a
+              128-bit vector encoding of color shifts and their direction to compare to a video stream. With Faiss, the
+              comparison process was made quicker as it could group similar encodings and use a tree to navigate to the
+              most accurate one.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/printer.jpg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>3D Printer</b></h4>
+            <p>Learned to CAD in Fusion 360 and create models to print with the Tevo Tornado. The design process I find
+              fun as I can make impractical trinkets and toys for fun which also made practice parts which solve day to
+              day issues.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/pump.png" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Water Purifier</b></h4>
+            <p>Using the power of a vacuum at 27-30HG water boils and with this principle, I would have two containers
+              one with dirty water and a large empty chamber for condensing. Once a vacuum was pulled for a bit it could
+              be released and the vaporized water would then condense in the large chamber as clean water.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/peg.jpg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Pegboard</b></h4>
+            <p>I used a 6' by 4' piece of pegboard supported with a frame of maple screwed into the wall to create a
+              base to support my tools. Next, I used my 3d printer to print attachments which leveraged the holes in the
+              pegboard to support my tools. In addition to that I am using a magnet I bought from IKEA to support my
+              metal tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="third margin-top left-padding">
+        <div class="card top-padding margin-bottom">
+          <img src="proj/login.png" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Backend Database</b></h4>
+            <p>II used Node.js to create a backend user authentication server. This project leveraged script to hash
+              passwords, session to keep users logged in and express to connect to my Postgres SQL server.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/web.png" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>Website</b></h4>
+            <p>Learned how to host and maintain a website using a remote server (digital ocean) and link it to a domain
+              name. I leveraged W3schools styling CSS code as a base and built upon it in HTML and added more styling.
+              Additionally, I have added a lazy loader for images and button functionality using Javascript and JS
+              functions in HTML.</p>
+          </div>
+        </div>
+        <div class="card top-padding margin-bottom">
+          <img src="proj/drone.jpg" alt="Avatar" style="width:75%" class="center-image">
+          <div class="container center-text">
+            <h4><b>FPV Drone</b></h4>
+            <p>Learned basics of solder, wiring, power, troubleshooting, ports, and signals through the process of
+              building an FPV drone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="center padding-32">
+      <div class="bar">
+        <a href="#" class="bar-item button hover-black">«</a>
+        <a href="#" class="bar-item black button">1</a>
+        <!--<a href="#" class="bar-item button hover-black">2</a>
+      <a href="#" class="bar-item button hover-black">3</a>
+      <a href="#" class="bar-item button hover-black">4</a>-->
+        <a href="#" class="bar-item button hover-black">»</a>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="button black xlarge display-topright">×</span>
+      <div class="modal-content animate-zoom center transparent padding-64">
+        <img id="img01" class="image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container padding-32 grey">
+      <div class="row-padding">
+        <div class="text">
+          <h3>INFO</h3>
+          <a href="https://www.facebook.com/ramsey.vandermeer" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/ramsey_photos/" class="fa fa-instagram"></a>
+          <a href="http://www.snapchat.com/add/ramsey.v" class="fa fa-snapchat-ghost"></a>
+          <a href="http://www.linkedin.com/in/ramseyvandermeer" class="fa fa-linkedin"></a>
+          <p><u>Copyright © 2020 Ramsey van der Meer All Rights Reserved</u></p><br>
+
+        </div>
+      </div>
+
+      <script>
+        // Script to open and close sidebar
+        function on_open() {
+          document.getElementById("Sidebar").style.display = "block";
+          document.getElementById("Overlay").style.display = "block";
+        }
+
+        function on_close() {
+          document.getElementById("Sidebar").style.display = "none";
+          document.getElementById("Overlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+
+      </script>
+
+
+</body>
+
+</html>
